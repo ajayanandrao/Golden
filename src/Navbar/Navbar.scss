@@ -1,0 +1,99 @@
+@import "./../Styles/Mixin_New.scss";
+
+.navbar {
+    width: 100%;
+    height: 55px;
+    background: #D68910;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    @include respond-to(xs) {
+        padding: 0 1rem;
+        height: 50px;
+    }
+
+    .Logo {
+        padding: 0.3rem 0.8rem;
+        background: red;
+        border-radius: 5px;
+        font-weight: 600;
+        font-family: coco;
+        font-size: 22px;
+
+        @include respond-to(xs) {
+            padding: 0.2rem 0.8rem;
+            font-size: 18px;
+        }
+    }
+
+    .navbar-mainu {
+        flex: 1;
+        display: flex;
+        padding: 0 1rem;
+        align-items: center;
+        top: 50px;
+
+        @include respond-to(xs) {
+            padding: 0;
+        }
+
+        .navbar-mainu-one {
+            flex: 1;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+
+            @include respond-to(xs) {
+                display: none;
+            }
+        }
+
+        .navbar-mainu-two {
+            flex: 1;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            .userPhoto {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: center;
+                cursor: pointer;
+            }
+
+            .avatar {
+                font-size: 32px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .save-cart {
+        position: relative;
+        display: flex;
+        margin: 0 1rem;
+
+        .save-item {
+            position: absolute;
+            right: -18px;
+            top: -5px;
+            background: #a93226;
+            padding: 5px;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+
+}

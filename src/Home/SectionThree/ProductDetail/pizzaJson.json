@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Pizza tomatoes",
+        "des": "Loaded with a delicious creamy tomato pasta topping , green capsicum, crunchy red and yellow bell peppers and black olives",
+        "price": "356",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7O13VK7v8onTbITEwleuPQ4U9Z-7jFJ_V9w&usqp=CAU"
+    },
+    {
+        "id": 2,
+        "name": "Margherita Pizza",
+        "des": "Loaded with a delicious creamy tomato pasta topping , green capsicum, crunchy red and yellow bell peppers and black olives",
+        "price": "399",
+        "img": "https://images.prismic.io/eataly-us/ed3fcec7-7994-426d-a5e4-a24be5a95afd_pizza-recipe-main.jpg?auto=compress,format"
+    },
+    {
+        "id": 3,
+        "name": "Cheese n Corn Pizza",
+        "des": "Loaded with a delicious creamy tomato pasta topping , green capsicum, crunchy red and yellow bell peppers and black olives",
+        "price": "499",
+        "img": "https://i0.wp.com/imovers.in/wp-content/uploads/2022/02/CORN-PIZZA.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Fresh Veggie Pizza",
+        "des": "Loaded with a delicious creamy tomato pasta topping , green capsicum, crunchy red and yellow bell peppers and black olives",
+        "price": "540",
+        "img": "https://j6e2i8c9.rocketcdn.me/wp-content/uploads/2016/02/veggie-pizza-3-1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Peppy Paneer Pizza",
+        "des": "Loaded with a delicious creamy tomato pasta topping , green capsicum, crunchy red and yellow bell peppers and black olives",
+        "price": "599",
+        "img": "https://b.zmtcdn.com/data/dish_photos/192/4a7fb954143b6c29a85676a6b87eb192.jpg"
+    }
+]

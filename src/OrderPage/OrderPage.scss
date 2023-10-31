@@ -1,0 +1,152 @@
+@import "./../Styles/Mixin_New.scss";
+
+.orderPage-main-container {
+    padding-bottom: 50px;
+
+    .orderpage-brand {
+        width: 100%;
+        height: 100px;
+        font-size: 50px;
+        font-family: coco;
+        color: goldenrod;
+        text-align: center;
+        margin: 30px 0;
+        border-bottom: 1px solid goldenrod;
+
+        @include respond-to(xs) {
+            font-size: 30px;
+        }
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .orderpage-api {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 650px;
+        padding: 0 1rem;
+    }
+
+    .pizza-card {
+        width: 100%;
+
+        // height: 220px;
+        padding: 1rem;
+        background: #873600;
+        border-radius: 10px;
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .pizza-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 15px;
+            margin-right: 30px;
+
+            @include respond-to(xs) {
+                width: 80px;
+                height: 80px;
+                margin-right: 20px;
+            }
+        }
+
+        .pizza-detail {
+            width: 100%;
+            max-width: 400px;
+            line-height: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .pizza-buttons {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+
+            .pizza-counter-div {
+                display: flex;
+                align-items: center;
+                margin-right: 1rem;
+
+                .pizza-counter-icon {
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .item-price {
+            width: 100%;
+            max-width: 80px;
+            padding: 0.5rem 1rem;
+            background: #DC7633;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+    }
+
+    .orderPage-order-div {
+        width: 100%;
+        background: #873600;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border-radius: 10px;
+        position: relative;
+
+        .orderpage-total {
+            margin-right: 1rem;
+            font-size: 24px;
+        }
+
+        .orderPage-stobery-div {
+            position: absolute;
+            left: 80px;
+            bottom: 30px;
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            object-position: center;
+
+            @include respond-to(xs) {
+                left: 5px;
+                bottom: 50px;
+            }
+        }
+
+        .orderPage-tomato-div {
+            position: absolute;
+            right: 30px;
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            object-position: center;
+
+            @include respond-to(xs) {
+                right: 10px;
+                top: 50px;
+            }
+        }
+    }
+}
