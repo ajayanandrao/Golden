@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Golden/static/css/main.26ba8616.css",
+    "main.js": "/Golden/static/js/main.56465543.js",
+    "static/js/787.7b63f85e.chunk.js": "/Golden/static/js/787.7b63f85e.chunk.js",
+    "static/media/v.mp4": "/Golden/static/media/v.e0f212afaab4ac4c09a3.mp4",
+    "static/media/sjdf.png": "/Golden/static/media/sjdf.77485b9186ad096f43f2.png",
+    "static/media/tomato.png": "/Golden/static/media/tomato.6946345ab0ad8500cebc.png",
+    "static/media/kothambir1.png": "/Golden/static/media/kothambir1.4be0b68cc416f95769a8.png",
+    "static/media/strawberry.png": "/Golden/static/media/strawberry.18fffd4678c64dbc1af5.png",
+    "static/media/200.png": "/Golden/static/media/200.6630fa2532637ce39dbd.png",
+    "static/media/handycheera.regular.otf": "/Golden/static/media/handycheera.regular.f447fcf47f14b5efa251.otf",
+    "static/media/hand-2.jpg": "/Golden/static/media/hand-2.0cd1e14cb4bfe0753249.jpg",
+    "static/media/hand.jpg": "/Golden/static/media/hand.8db42c5f09d1222abcff.jpg",
+    "index.html": "/Golden/index.html",
+    "main.26ba8616.css.map": "/Golden/static/css/main.26ba8616.css.map",
+    "main.56465543.js.map": "/Golden/static/js/main.56465543.js.map",
+    "787.7b63f85e.chunk.js.map": "/Golden/static/js/787.7b63f85e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26ba8616.css",
+    "static/js/main.56465543.js"
+  ]
+}
