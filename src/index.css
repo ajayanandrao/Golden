@@ -22,3 +22,8 @@ code {
 .link:hover {
   color: white;
 }
+.btn{
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+}

@@ -184,8 +184,7 @@ const Pizza = ({ item }) => {
                             <i className="bi bi-plus-circle"></i></div>
                     </div>
 
-                    <button className='btn btn-sm btn-primary my-4' onClick={() => Save(item)}>Save</button>
-                    <button className='btn btn-sm btn-success'>Buy</button>
+                    <div className='item-price my-4 ' onClick={() => Save(item)}>Save</div>
                 </div>
             </div >
 
