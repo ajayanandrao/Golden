@@ -171,10 +171,11 @@ const Pizza = ({ item }) => {
                 <div className="pizza-detail">
                     <h2>{item.name}</h2>
                     {item.des}
-                    <div className='item-price'>{item.price}<MdCurrencyRupee /></div>
                 </div>
 
+
                 <div className="pizza-buttons">
+                    <div className='item-price'>{item.price}<MdCurrencyRupee /></div>
 
                     <div className="pizza-counter-div">
                         <div className='pizza-counter-icon' onClick={() => MinNum(item)}>
@@ -184,7 +185,7 @@ const Pizza = ({ item }) => {
                             <i className="bi bi-plus-circle"></i></div>
                     </div>
 
-                    <div className='item-price my-4 ' onClick={() => Save(item)}>Save</div>
+                    <div className='item-price ' onClick={() => Save(item)}>Save</div>
                 </div>
             </div >
 

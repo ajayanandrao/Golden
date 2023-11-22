@@ -1,3 +1,5 @@
+@import "./../../../../Styles/Mixin_New.scss";
+
 .Pizza-main-container {
     width: 100%;
     display: flex;
@@ -5,7 +7,9 @@
     align-items: center;
     padding: 0.5rem 1rem;
 
-    h2{
+
+
+    h2 {
         text-transform: capitalize;
     }
 
@@ -20,6 +24,11 @@
         display: flex;
         align-items: center;
 
+        @include respond-to(xs) {
+            flex-direction: column;
+            height: 100%;
+        }
+
         .pizza-img {
             width: 150px;
             height: 150px;
@@ -27,6 +36,11 @@
             object-position: center;
             border-radius: 15px;
             margin-right: 80px;
+
+            @include respond-to(xs) {
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
         }
 
         .pizza-detail {
@@ -46,9 +60,25 @@
             flex-direction: column;
             align-items: center;
             justify-content: end;
+            margin-left: 1rem;
+
+            @include respond-to(xs) {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                // background: red;
+                width: 100%;
+                margin-top: 1rem;
+
+            }
 
             .pizza-counter-div {
                 display: flex;
+                margin: 20px 0;
+
+                @include respond-to(xs) {
+                    margin-right: 1rem;
+                }
 
                 .pizza-counter-icon {
                     font-size: 20px;
@@ -58,7 +88,6 @@
         }
 
         .item-price {
-            margin-top: 1rem;
             width: 100%;
             max-width: 80px;
             padding: 0.5rem 1rem;
@@ -69,6 +98,7 @@
             border-radius: 30px;
             cursor: pointer;
             font-size: 16px;
+
         }
     }
 }

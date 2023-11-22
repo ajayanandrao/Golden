@@ -6,21 +6,17 @@ import ProductDetail from './Home/SectionThree/ProductDetail/ProductDetail'
 import OrderPage from './OrderPage/OrderPage'
 import SignUp from './Authentication/SignUp'
 import Login from './Authentication/Login'
-import Hospital from './mehakar/Hospital/Hospital'
-import HospitalList from './mehakar/Hospital/HospitalList'
 
 const App = () => {
   return (
     <>
-      <Router>
+      <Router basename='/Golden'>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route exact path='/' element={<Home />} />
           <Route path='signUp' element={<SignUp />} />
           <Route path='login' element={<Login />} />
           <Route path='order' element={<OrderPage />} />
-          <Route path='hospital' element={<Hospital />} />
-          <Route path='hospital_List' element={<HospitalList />} />
           <Route path='product/:id' element={<ProductDetail />} />
 
         </Routes>
