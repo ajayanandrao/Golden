@@ -1,0 +1,136 @@
+@import "./../Styles/Mixin_New.scss";
+
+.SecThree-main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./../img/bakery/4x/Asset\ 1@4x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding: 1rem;
+
+    transition: 0.5s ease-in-out;
+
+    @include respond-to(lg) {
+        height: 660px;
+    }
+
+    @include respond-to(md) {
+        height: 660px;
+    }
+
+    @include respond-to(sm) {
+        height: 660px;
+    }
+
+    @include respond-to(xs) {
+        padding-top: 30px;
+    }
+
+    .SecThree-wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+        @include respond-to(xs) {
+            flex-direction: column;
+        }
+
+        .SecThree-One {
+            width: 100%;
+            max-width: 350px;
+            height: 350px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            border: 1px solid white;
+
+
+            @include respond-to(xs) {
+                max-width: 250px;
+                height: 250px;
+            }
+
+            .secThree-One-one {
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(white, rgba(255, 255, 255, 0.151));
+            }
+
+            .secThree-One-two {
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.192);
+                backdrop-filter: blur(10px);
+
+            }
+
+            .secThree-one-img {
+                width: 300px;
+                height: 300px;
+                object-fit: contain;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                @include respond-to(xs) {
+                    width: 200px;
+                    height: 200px;
+                }
+
+            }
+        }
+
+        .SecThree-Two {
+            width: 100%;
+            max-width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+
+            @include respond-to(xs) {
+                height: auto;
+            }
+
+            .secThree-two-tile {
+                margin-bottom: 50px;
+                font-family: 'Philosopher', sans-serif;
+
+                @include respond-to(sm) {
+                    margin-bottom: 20px;
+                }
+
+                @include respond-to(xs) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .secThree-two-tile-two {
+                font-size: 18px;
+            }
+
+            .order-btn {
+                margin: 50px 0;
+                padding: 8px 15px;
+                border: 1px solid white;
+                cursor: pointer;
+                font-weight: 500;
+
+                @include respond-to(sm) {
+                    margin: 20px 0;
+                }
+
+                @include respond-to(xs) {
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+@import "./../Styles/Mixin_New.scss";
+@import "./../Styles/Variable";
+
+.SecSix-main {
+    width: 100%;
+    height: 100%;
+    background-image: url("./../img/bakery/4x/Asset\ 1@4x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 50px;
+
+    transition: 0.5s ease-in-out;
+
+    @include respond-to(lg) {
+        height: 100%;
+    }
+
+    @include respond-to(md) {
+        height: 100%;
+    }
+
+    @include respond-to(sm) {
+        height: 100%;
+    }
+
+    @include respond-to(xs) {
+        padding-top: 30px;
+    }
+
+    .SecThree-wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+        @include respond-to(xs) {
+            flex-direction: column;
+        }
+
+        @include respond-to(sm) {
+            flex-direction: column;
+        }
+
+        .SecThree-One {
+            width: 100%;
+            max-width: 500px;
+            height: 400px;
+            position: relative;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+        
+            @include respond-to(sm) {
+                height: 200px;
+            }
+            @include respond-to(xs) {
+                height: 150px;
+            }
+        }
+
+        .SecThree-Two {
+            width: 100%;
+            max-width: 500px;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+
+            @include respond-to(sm) {
+                height: 200px;
+            }
+
+            @include respond-to(xs) {
+                height: auto;
+                height: 200px;
+            }
+
+            .secThree-card-one {
+                padding: 20px;
+                background: white;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                margin-right: 1rem;
+
+                @include respond-to(xs) {}
+
+                .secThree-card-icon {
+                    color: $title;
+                    font-size: 60px;
+                }
+
+                .secThree-title {
+                    color: $title;
+                    font-family: 'Philosopher', sans-serif;
+                }
+
+                .order-btn {
+                    border: 1px solid $title;
+                    border-radius: 30px;
+                    padding: 6px 16px;
+                    color: $title;
+                    font-weight: 500;
+
+                }
+            }
+
+            .secThree-card-two {
+                padding: 20px;
+                border: 1px solid white;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                .secThree-card-icon {
+                    color: white;
+                    font-size: 60px;
+                }
+
+                .secThree-title {
+                    color: white;
+                    font-family: 'Philosopher', sans-serif;
+                }
+
+                .order-btn {
+                    border: 1px solid white;
+                    border-radius: 30px;
+                    padding: 6px 16px;
+                    color: white;
+                    font-weight: 500;
+
+                }
+            }
+        }
+    }
+}

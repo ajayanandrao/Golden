@@ -1,0 +1,220 @@
+@import "./../Styles/Mixin_New.scss";
+
+.SecOne-main {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 80px;
+
+    @include respond-to(lg) {
+        height: 658px;
+
+    }
+
+    @include respond-to(md) {
+        height: 658px;
+
+    }
+
+    @include respond-to(sm) {
+        height: 100%;
+
+    }
+
+    @include respond-to(xs) {
+        height: 100%;
+
+    }
+
+    .section-div-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        @include respond-to(sm) {
+            flex-direction: column;
+        }
+
+        @include respond-to(xs) {
+            flex-direction: column;
+        }
+
+        .sec-card-one {
+            width: 100%;
+            max-width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            @include respond-to(sm) {
+                height: 200px;
+            }
+
+            @include respond-to(xs) {
+                height: auto;
+            }
+
+            .heading-one {
+                font-size: 16px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            }
+
+            .main-hedaing {
+                font-size: 42px;
+                font-family: 'Philosopher', sans-serif;
+                display: flex;
+                flex-direction: column;
+
+                @include respond-to(sm) {
+                    flex-direction: row;
+                }
+
+                @include respond-to(xs) {
+                    flex-direction: row;
+                    font-size: 30px;
+                }
+            }
+
+            .h1-color {
+                font-size: 42px;
+                color: #e11d48;
+                font-family: 'Philosopher', sans-serif;
+
+                @include respond-to(xs) {
+                    font-size: 30px;
+                }
+            }
+
+            .order-btn {
+                width: 120px;
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #e11d48;
+                border-radius: 5px;
+                text-transform: capitalize;
+                font-weight: 500;
+                font-size: 16px;
+                margin-top: 30px;
+                cursor: pointer;
+
+                @include respond-to(sm) {
+                    display: none;
+                }
+
+                @include respond-to(xs) {
+                    display: none;
+                }
+            }
+
+            .heding-text {
+                color: #848484;
+                font-family: 'Roboto', sans-serif;
+
+                @include respond-to(sm) {
+                    display: none;
+                }
+
+                @include respond-to(xs) {
+                    display: none;
+                }
+            }
+        }
+
+        .sec-card-two {
+            width: 100%;
+            max-width: 450px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 80px;
+            transition: 0.5s ease-in-out;
+
+            @include respond-to(sm) {
+                max-width: 400px;
+                height: auto;
+                padding-top: 0px;
+            }
+
+            @include respond-to(xs) {
+                max-width: 400px;
+                height: auto;
+                padding-top: 0px;
+
+            }
+
+            .heding-text {
+                color: #848484;
+                font-family: 'Roboto', sans-serif;
+                display: none;
+
+                @include respond-to(sm) {
+                    display: flex;
+                    width: 100%;
+                    max-width: 500px;
+                }
+
+                @include respond-to(xs) {
+                    display: flex;
+                    width: 100%;
+                    max-width: 500px;
+                }
+            }
+
+            .order-btn {
+                width: 120px;
+                height: 45px;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                background: #e11d48;
+                border-radius: 5px;
+                text-transform: capitalize;
+                font-weight: 500;
+                font-size: 16px;
+                margin-top: 30px;
+                cursor: pointer;
+
+                @include respond-to(sm) {
+                    display: flex;
+                }
+
+                @include respond-to(xs) {
+                    display: flex;
+                }
+            }
+
+            @include respond-to(sm) {
+                flex-direction: column;
+            }
+
+            @include respond-to(xs) {
+                flex-direction: column;
+            }
+
+            .sec-card-two-img {
+                width: 100%;
+                height: 100%;
+                transition: 0.5s ease-in-out;
+                object-fit: contain;
+
+                @include respond-to(sm) {
+                    max-width: 300px;
+                }
+
+                @include respond-to(xs) {
+                    max-width: 250px;
+                }
+            }
+        }
+    }
+}

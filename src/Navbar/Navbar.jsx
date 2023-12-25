@@ -1,53 +1,84 @@
-import React, { useEffect, useState } from 'react'
-import "./Navbar.scss";
-import photo from "./../images/200.png";
-import { Link } from 'react-router-dom';
-import { collection, onSnapshot } from 'firebase/firestore';
-import { db } from '../Firebase';
-import { FaUserCircle } from "react-icons/fa";
+import { Link } from "react-router-dom"
+import "./Navbar.scss"
+import { RiMenu5Fill } from "react-icons/ri";
+import { useState } from "react";
+import { IoClose } from "react-icons/io5";
+import { motion } from "framer-motion";
+import { BsFillCartFill } from "react-icons/bs";
 
 const Navbar = () => {
 
-    const [saveData, setSaveData] = useState([]);
-    const saveItemRef = collection(db, "SaveItemData");
+    const [on, setOn] = useState(false);
 
-    useEffect(() => {
-        const nusub = onSnapshot(saveItemRef, (snap) => {
-            const newApi = snap.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
-            setSaveData(newApi);
-
-        });
-        return nusub;
-    }, []);
+    function overlayOn() {
+        setOn(!on);
+    }
 
     return (
-        <div className='navbar'>
-            <Link to="/" className='link'>
-                <div className="Logo">
-                    Golden
+
+        <>
+            {on &&
+                <motion.div
+                    initial={{ x: -100 }}
+                    animate={{ x: 0 }}
+                    className="Side-nav-item-div">
+                    <IoClose className="nav-close" onClick={overlayOn} />
+
+                    <div className="nav-item ">
+                        Home
+                    </div>
+                    <div className="nav-item">
+                        Our Cake
+                    </div>
+                    <div className="nav-item">
+                        About
+                    </div>
+                    <div className="nav-item">
+                        Contact us
+                    </div>
+                    <div className="nav-item">
+                        Profile
+                    </div>
+                </motion.div>
+            }
+
+            <div className='navbar-main'>
+                <div className="nav-brand ">
+                    <Link to="/" className="link title">  Golden Bakery</Link>
                 </div>
-            </Link>
-            <Link to={"/order/"} className='save-cart link'>
-                <i class="bi bi-cart2" style={{ fontSize: "24px", cursor: "pointer" }}></i>
-                <div className='save-item'>{saveData.length}</div>
-            </Link>
-            <div className="navbar-mainu">
-                <div className="navbar-mainu-one">
-                    <span>Product</span>
-                    <span className='mx-3'>About Us</span>
+                <div className="nav-item-div">
+                    <div className="nav-item ">
+                        Home
+                    </div>
+                    <div className="nav-item">
+                        Our Cake
+                    </div>
+                    <div className="nav-item">
+                        About
+                    </div>
+                    <div className="nav-item">
+                        Contact us
+                    </div>
+                    <div className="nav-item">
+                        <BsFillCartFill className="cart-icon" />
+                    </div>
 
                 </div>
-                <div className="navbar-mainu-two">
 
-                    <div>
-                        {/* <img src={photo} alt="" className='userPhoto' /> */}
-                        <Link to={"/login"} className='link'>
-                            <FaUserCircle className='avatar' />
-                        </Link>
+
+
+                <div className="menu-div">
+                    <div className="nav-item-mainu me-3">
+                        <BsFillCartFill className="cart-icon" />
+                    </div>
+                    <div className="nav-item-mainu">
+                        <RiMenu5Fill onClick={overlayOn} />
                     </div>
                 </div>
+
             </div>
-        </div >
+
+        </>
     )
 }
 

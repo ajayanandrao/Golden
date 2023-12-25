@@ -1,0 +1,179 @@
+@import "./../Styles/Mixin_New.scss";
+@import "./../Styles/Variable";
+
+.SecFive-main {
+    width: 100%;
+    height: 100vh;
+    background: #ffe4eb;
+    padding-top: 50px;
+    padding: 1rem;
+
+    transition: 0.5s ease-in-out;
+
+    @include respond-to(lg) {
+        height: 660px;
+    }
+
+    @include respond-to(md) {
+        height: 660px;
+    }
+
+    @include respond-to(sm) {
+        height: 660px;
+    }
+
+    @include respond-to(xs) {
+        padding-top: 30px;
+    }
+
+    .SecThree-wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+        @include respond-to(xs) {
+            flex-direction: column;
+        }
+
+        .SecThree-One {
+            width: 100%;
+            max-width: 350px;
+            height: 350px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            border: 1px solid $title;
+
+            .secFive-circal {
+                width: 120px;
+                height: 120px;
+                background: white;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, #be185d60 0px -2px 6px 0px inset;
+                position: absolute;
+                top: -50px;
+                right: -50px;
+                z-index: 1;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+
+                .secFive-circal-text {
+                    color: $title;
+                    font-family: 'Philosopher', sans-serif;
+
+                }
+
+                .secFive-circal-p {
+                    color: $title-two;
+
+                }
+
+                @include respond-to(sm) {
+                    width: 100px;
+                    height: 100px;
+                    transition: 0.5s ease-in-out;
+                }
+
+                @include respond-to(xs) {
+                    width: 80px;
+                    height: 80px;
+                    transition: 0.5s ease-in-out;
+                    top: -30px;
+                    right: -30px;
+                }
+            }
+
+            @include respond-to(xs) {
+                max-width: 250px;
+                height: 250px;
+            }
+
+            .secThree-One-one {
+                width: 100%;
+                height: 100%;
+                background: linear-gradient($title, $title);
+            }
+
+            .secThree-One-two {
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.192);
+                backdrop-filter: blur(10px);
+
+            }
+
+            .secThree-one-img {
+                width: 300px;
+                height: 300px;
+                object-fit: contain;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                @include respond-to(xs) {
+                    width: 200px;
+                    height: 200px;
+                }
+
+            }
+        }
+
+        .SecThree-Two {
+            width: 100%;
+            max-width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 1rem;
+
+            @include respond-to(xs) {
+                height: auto;
+                align-items: center;
+            }
+
+            .secThree-two-tile {
+                margin-bottom: 50px;
+                font-family: 'Philosopher', sans-serif;
+                color: $title;
+
+                @include respond-to(sm) {
+                    margin-bottom: 20px;
+                }
+
+                @include respond-to(xs) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .secThree-two-tile-two {
+                font-size: 18px;
+                color: #181818;
+            }
+
+            .order-btn {
+                margin: 50px 0;
+                padding: 8px 15px;
+                border: 1px solid $title;
+                cursor: pointer;
+                font-weight: 500;
+                color: $title;
+
+                @include respond-to(sm) {
+                    margin: 20px 0;
+                }
+
+                @include respond-to(xs) {
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
