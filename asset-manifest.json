@@ -1,28 +1,27 @@
 {
   "files": {
-    "main.css": "/Golden/static/css/main.ac36587f.css",
-    "main.js": "/Golden/static/js/main.5c60fc44.js",
-    "static/js/787.7b63f85e.chunk.js": "/Golden/static/js/787.7b63f85e.chunk.js",
-    "static/media/v.mp4": "/Golden/static/media/v.e0f212afaab4ac4c09a3.mp4",
-    "static/media/sjdf.png": "/Golden/static/media/sjdf.77485b9186ad096f43f2.png",
-    "static/media/tomato.png": "/Golden/static/media/tomato.6946345ab0ad8500cebc.png",
-    "static/media/kothambir1.png": "/Golden/static/media/kothambir1.4be0b68cc416f95769a8.png",
-    "static/media/strawberry.png": "/Golden/static/media/strawberry.18fffd4678c64dbc1af5.png",
-    "static/media/200.png": "/Golden/static/media/200.6630fa2532637ce39dbd.png",
-    "static/media/handycheera.regular.otf": "/Golden/static/media/handycheera.regular.f447fcf47f14b5efa251.otf",
-    "static/media/hand-2.jpg": "/Golden/static/media/hand-2.0cd1e14cb4bfe0753249.jpg",
-    "static/media/hand.jpg": "/Golden/static/media/hand.8db42c5f09d1222abcff.jpg",
-    "static/media/sbi.png": "/Golden/static/media/sbi.184731c818d89f7ded85.png",
-    "static/media/ICICI.png": "/Golden/static/media/ICICI.1787f24cdcac2f167015.png",
-    "static/media/axis.png": "/Golden/static/media/axis.c285c8b2f8d97d92ad65.png",
-    "static/media/HDB.png": "/Golden/static/media/HDB.4112783142cf10a94ac1.png",
-    "index.html": "/Golden/index.html",
-    "main.ac36587f.css.map": "/Golden/static/css/main.ac36587f.css.map",
-    "main.5c60fc44.js.map": "/Golden/static/js/main.5c60fc44.js.map",
-    "787.7b63f85e.chunk.js.map": "/Golden/static/js/787.7b63f85e.chunk.js.map"
+    "main.css": "/Golden/static/css/main.9611ace2.css",
+    "main.js": "/Golden/static/js/main.b2ab4351.js",
+    "static/js/27.87965f17.chunk.js": "/Golden/static/js/27.87965f17.chunk.js",
+    "static/media/cheesD.png": "/Golden/static/media/cheesD.fa8d4fcf6b49b14d6deb.png",
+    "static/media/doughnut2.png": "/Golden/static/media/doughnut2.aa466309fa3c10188546.png",
+    "static/media/pizza.png": "/Golden/static/media/pizza.864dbe9a0ae2bfe15cbe.png",
+    "static/media/doughnut.png": "/Golden/static/media/doughnut.3879636f702fb2297ff1.png",
+    "static/media/chicken.png": "/Golden/static/media/chicken.7f0689a239811800dffa.png",
+    "static/media/Asset 1@4x.png": "/Golden/static/media/Asset 1@4x.1d4f773ea4bb5e51739c.png",
+    "static/media/sandwich.png": "/Golden/static/media/sandwich.35674e280855926e2ebf.png",
+    "static/media/chD.png": "/Golden/static/media/chD.c45f668eeeae834c3210.png",
+    "static/media/Caramel.png": "/Golden/static/media/Caramel.d25b3cb33a47246a0ac9.png",
+    "static/media/Asset 3@4x.png": "/Golden/static/media/Asset 3@4x.4776e8ee1a32d3b2afa7.png",
+    "static/media/bg.png": "/Golden/static/media/bg.541ec406e9cbb881d638.png",
+    "static/media/cupcake.png": "/Golden/static/media/cupcake.36b72eb00fd5e60f3829.png",
+    "static/media/lemon.png": "/Golden/static/media/lemon.f0ed75a4a445e31a31fe.png",
+    "static/media/Asset 2@4x.png": "/Golden/static/media/Asset 2@4x.121b393e4ae6e31faed5.png",
+    "static/media/burger.png": "/Golden/static/media/burger.59583d5a1f8928ede209.png",
+    "index.html": "/Golden/index.html"
   },
   "entrypoints": [
-    "static/css/main.ac36587f.css",
-    "static/js/main.5c60fc44.js"
+    "static/css/main.9611ace2.css",
+    "static/js/main.b2ab4351.js"
   ]
 }
